@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['orgchart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = new google.visualization.DataTable();
+           data.addColumn('string', 'Name');
+            data.addColumn('string', 'Manager');
+            data.addColumn('string', 'Manager');
+			
+            data.addRows([
+                ['حملیہ', '', ''],
+				['بااعتبارالمحکی عنہ', 'حملیہ', ''],
+				['بااعتبارالنسبۃ الحکمیۃ', 'حملیہ', ''],
+				['بااعتبارالموضوع', 'حملیہ', ''],
+				['بااعتبار الرابطہ', 'حملیہ', ''],
+				['ثلاثی', 'بااعتبار الرابطہ', ''],
+				['ثنائیہ', 'بااعتبار الرابطہ', ''],
+				['محصورۃ', 'بااعتبارالموضوع', ''],
+				['مہملہ', 'بااعتبارالموضوع', ''],
+				['طبعیہ', 'بااعتبارالموضوع', ''],
+				['شخصیہ', 'بااعتبارالموضوع', ''],
+				['سالبہ', 'بااعتبارالنسبۃ الحکمیۃ', ''],
+				['موجبہ', 'بااعتبارالنسبۃ الحکمیۃ', ''],
+				['غیر معدولہ', 'موجبہ', ''],
+				['معدولہ', 'موجبہ', ''],
+				[' غیر معدولہ', 'سالبہ', ''],
+				[' معدولہ', 'سالبہ', ''],
+				['حقیقیہ', 'بااعتبارالمحکی عنہ', ''],
+				['خارجیہ', 'بااعتبارالمحکی عنہ', ''],
+				['ذہنیۃ', 'بااعتبارالمحکی عنہ', ''],
+				
+				
+				
+				
+                
+                // Add more family members and relationships here
+            ]);
+
+            var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+            chart.draw(data, { 'allowHtml': true, 'layout': 'rtl' });
+        }
+    </script>
+</head>
+<body style="direction:rtl">
+    <div id="chart_div"></div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+tesseract input.pdf output.txt -l ara
+tesseract input.pdf output.txt -l urd
+
+
+
+
+tesseract book-212.jpg output-212.txt -l ara
+tesseract book-213.jpg output-213.txt -l ara
+tesseract book-214.jpg output-214.txt -l ara
+tesseract book-215.jpg output-215.txt -l ara
+tesseract book-216.jpg output-216.txt -l ara
+tesseract book-217.jpg output-217.txt -l ara
+tesseract book-218.jpg output-218.txt -l ara
+tesseract book-219.jpg output-219.txt -l ara
+tesseract book-220.jpg output-220.txt -l ara
+tesseract book-221.jpg output-221.txt -l ara
+tesseract book-222.jpg output-222.txt -l ara
+tesseract book-223.jpg output-223.txt -l ara
+tesseract book-224.jpg output-224.txt -l ara
+tesseract book-225.jpg output-225.txt -l ara
